@@ -3,3 +3,10 @@
 Homestead.yaml
 Homestead.json
 .env
+.idea/.name
+.idea/workspace.xml
+.idea/Laravel5.iml
+.idea/modules.xml
+.idea/blade.xml
+.idea/vcs.xml
+.idea/misc.xml
