@@ -25,3 +25,4 @@ Route::controller('users', 'UserController');
 //Route:get('users', 'UserController@getInfos');
 //Route::post('users', 'UserController@postInfos');
 Route::controller('contact', 'ContactController');
+Route::controller('photo', 'PhotoController');

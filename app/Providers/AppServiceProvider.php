@@ -23,6 +23,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(
+            'App\Management\PhotoManagement',
+            'App\Management\PhotoManagementImpl'
+        );
     }
 }

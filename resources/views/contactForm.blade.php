@@ -1,4 +1,4 @@
-@extends('contactTemplate')
+@extends('formTemplate')
 
 @section('content')
     <br>
