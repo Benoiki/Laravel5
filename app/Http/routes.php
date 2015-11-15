@@ -20,9 +20,13 @@ Route::get('facture/{n}', function($n){
     return view('facture')->withNumero($n);
 })->where('n', '[0-9]+');
 
-/*Forms */
-Route::controller('users', 'UserController');
+/* Forms */
+Route::controller('users', 'UsersController');
 //Route:get('users', 'UserController@getInfos');
 //Route::post('users', 'UserController@postInfos');
 Route::controller('contact', 'ContactController');
 Route::controller('photo', 'PhotoController');
+
+/* Database */
+Route::controller('email', 'EmailController');
+Route::resource('user', 'UserController');

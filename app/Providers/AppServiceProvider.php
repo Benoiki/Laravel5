@@ -27,5 +27,9 @@ class AppServiceProvider extends ServiceProvider
             'App\Management\PhotoManagement',
             'App\Management\PhotoManagementImpl'
         );
+
+        $this->app->bind(
+            'App\Repository\EmailRepository',
+            'App\Repository\EmailRepositoryImpl');
     }
 }
