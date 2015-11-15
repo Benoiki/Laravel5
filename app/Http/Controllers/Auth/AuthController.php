@@ -23,6 +23,8 @@ class AuthController extends Controller
 
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
 
+    protected $redirectTo = 'post';
+    protected $redirectAfterLogout = 'post';
     /**
      * Create a new authentication controller instance.
      *
@@ -60,6 +62,7 @@ class AuthController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            'admin' => isset($data['admin'])
         ]);
     }
 }
